@@ -1,0 +1,8 @@
+Build:
+
+    gcc quic_proxy.c route.c log.c http_server.c connection_pool.c -o quicproxy -lpthread -lmsquic -L.
+
+
+Start:
+
+    ./quicproxy -cert_file:server.cert -key_file:server.key
